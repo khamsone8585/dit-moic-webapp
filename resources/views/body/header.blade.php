@@ -35,7 +35,11 @@
                         <li><a href="https://law.moic.gov.la/lo/" target="_blank">ຖານຂໍ້ມູນນິຕິກຳ ອຄ</a></li>
                     </ul>
                 </li>
-                <li><a href="{{route('pagesContact')}}">ຕິດຕໍ່ພວກເຮົາ</a></li>
+                <li class="drop-down"><a href="{{route('pagesContact')}}">ຕິດຕໍ່ພວກເຮົາ</a>
+                    <ul>
+                        <li><a href="{{route('pagesLegislation')}}">ເຂົ້າສູ່ລະບົບ</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <!-- .nav-menu -->

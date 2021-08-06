@@ -41,28 +41,28 @@
                 <div class="col-md-6">
                     <div class="icon-box">
                         <i class="icofont-computer"></i>
-                        <h4><a href="history.html">ກ່ຽວກັບພວກເຮົາ</a></h4>
+                        <h4><a href="{{route('pagesHistory')}}">ກ່ຽວກັບພວກເຮົາ</a></h4>
                         <p>ປະຫວັດຄວາມເປັນມາ ໂຄງຮ່າງການຈັດຕັ້ງ ພາລະບົດບາດ ບົດລາຍງານປະຈຳປີ ແຜນຍຸດທະສາດ ແລະ ວິໄສທັດ</p>
                     </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
                     <div class="icon-box">
                         <i class="icofont-tasks-alt"></i>
-                        <h4><a href="news.html">ຂ່າວ/ປະກາດຂອງກົມ</a></h4>
+                        <h4><a href="{{route('pagesNews')}}">ຂ່າວ/ປະກາດຂອງກົມ</a></h4>
                         <p>ແຈ້ງການປັບລາຄານໍ້າມັນ ຂ່າວປະຊາສຳພັນ ຮູບພາບກິດຈະກຳ</p>
                     </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
                     <div class="icon-box">
                         <i class="icofont-chart-bar-graph"></i>
-                        <h4><a href="statistic.html">ຂໍ້ມູນສະຖິຕິ/ບົດຄົ້ນຄວ້າ</a></h4>
+                        <h4><a href="{{route('pagesStatistic')}}">ຂໍ້ມູນສະຖິຕິ/ບົດຄົ້ນຄວ້າ</a></h4>
                         <p>ຂໍ້ມູນສະຖິຕິ ບົດຄົ້ນຄວ້າ</p>
                     </div>
                 </div>
                 <div class="col-md-6 mt-4 mt-md-0">
                     <div class="icon-box">
                         <i class="icofont-settings"></i>
-                        <h4><a href="legislation.html">ນິຕິກຳຂອງກົມ</a></h4>
+                        <h4><a href="{{route('pagesLegislation')}}">ນິຕິກຳຂອງກົມ</a></h4>
                         <p>ກົດໝາຍ ແລະ ດຳລັດ ຄຳສັ່ງ ແລະ ຂໍ້ຕົກລົງ ບົດແນະນຳ ແລະ ແຈ້ງການ</p>
                     </div>
                 </div>
@@ -81,19 +81,19 @@
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                        <img src="assets/img/fuel_price.jpg" class="img-fluid" alt="">
+                        <img src="{{asset('frontend/assets/img/fuel_price.jpg')}}" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>ແຈ້ງການລາຄານໍ້າມັນ</h4>
                             <p>ຄັ້ງວັນທີ 09/03/2021</p>
                             <div class="portfolio-links">
-                                <a href="fuel_price.html" title="ອ່ານລະອຽດເພີ່ມ"><i class="ri-links-fill"></i></a>
+                                <a href="{{route('pagesFuelPrice')}}" title="ອ່ານລະອຽດເພີ່ມ"><i class="ri-links-fill"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img src="assets/img/news_1.jpg" class="img-fluid" alt="">
+                        <img src="{{asset('frontend/assets/img/news_1.jpg')}}" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>ຂ່າວ</h4>
                             <p>ທ່ານ ນາງ ເຂັມມະນີ ສະເໜີພາກສ່ວນກ່ຽວຂ້ອງ ເບິ່ງຄືນມາດຖານສ້າງປ້ຳນ້ຳມັນໃນເຂດຊຸມຊົນ</p>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                        <img src="assets/img/news_4.jpg" class="img-fluid" alt="">
+                        <img src="{{asset('frontend/assets/img/news_4.jpg')}}" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>ຂ່າວພາຍໃນກົມ</h4>
                             <p>ກອງປະຊຸມໃຫຍ່ໜ່ວຍພັກ ກຄພນ ຄັ້ງທີ V</p>
@@ -122,7 +122,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                     <div class="portfolio-wrap">
-                        <img src="assets/img/news_3.jpg" class="img-fluid" alt="">
+                        <img src="{{asset('frontend/assets/img/news_3.jpg')}}" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>ຂ່າວ</h4>
                             <p>ກອງປະຊຸມປືກສາຫາລື ກ່ຽວກັບ ຜົນກະທົບໂຄງສ້າງລາຄານໍ້າມັນເຊື້ອໄຟ</p>
@@ -136,7 +136,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img src="assets/img/news_2.jpg" class="img-fluid" alt="">
+                        <img src="{{asset('frontend/assets/img/news_2.jpg')}}" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>ຂ່າວ</h4>
                             <p>ກະຊວງ ອຄ ເປີດພິທີນຳໃຊ້ ສາຍດ່ວນ 1510 ເພື່ອປົກປ້ອງຜູ້ຊົມໃຊ້</p>
@@ -150,7 +150,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img src="assets/img/activities_1.jpg" class="img-fluid" alt="">
+                        <img src="{{asset('frontend/assets/img/activities_1.jpg')}}" class="img-fluid" alt="">
                         <div class="portfolio-info">
                             <h4>ກິດຈະກຳ</h4>
                             <p>ຂະບວນແຂ່ງຂັນກິລາຂໍ່ານັບຮັບຕ້ອນ​ກອງປະຊຸມເປີດກ້ວາງກາງສະໄໝ</p>
