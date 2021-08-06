@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,11 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
-});
-
-Route::get('/activity', function(){
-    return view('pages.activity');
-});
+Route::get('/', [HomeController::class,'Home'])->name('homeIndex');
+Route::get('/activity',[HomeController::class,'Activity'])->name('pagesActivity');
+Route::get('/contact',[HomeController::class,'Contact'])->name('pagesContact');
+Route::get('/history',[HomeController::class,'History'])->name('pagesHistory');
+Route::get('/structure',[HomeController::class,'Structure'])->name('pagesStructure');
+Route::get('/role',[HomeController::class,'Role'])->name('pagesRole');
+Route::get('/whiteReport',[HomeController::class,'WhiteReport'])->name('pagesWhiteReport');
+Route::get('/Strategy',[HomeController::class,'Strategy'])->name('pagesStrategy');
+Route::get('/FuelPrice',[HomeController::class,'FuelPrice'])->name('pagesFuelPrice');
+Route::get('/News',[HomeController::class,'News'])->name('pagesNews');
+Route::get('/Statistic',[HomeController::class,'Statistic'])->name('pagesStatistic');
+Route::get('/Legislation',[HomeController::class,'Legislation'])->name('pagesLegislation');
+Route::get('/Order',[HomeController::class,'Order'])->name('pagesOrder');
+Route::get('/Notice',[HomeController::class,'Notice'])->name('pagesNotice');
 

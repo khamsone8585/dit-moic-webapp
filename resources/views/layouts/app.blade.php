@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>ກົມການຄ້າພາຍໃນ ກະຊວງອຸດສາຫະກໍາ ແລະ ການຄ້າ</title>
+    <title>ກົມການຄ້າພາຍໃນ ກະຊວງອຸດສາຫະກໍາ ແລະ ການຄ້າ - @yield('title')</title>
     <meta content="ກົມການຄ້າພາຍໃນ ກະຊວງອຸດສາຫະກໍາ ແລະ ການຄ້າ" name="descriptison">
     <meta content="ກົມການຄ້າພາຍໃນ, ກະຊວງອຸດສາຫະກໍາ ແລະ ການຄ້າ, ສປປ ລາວ" name="keywords">
     <!-- Favicons -->
@@ -27,8 +27,9 @@
 
     @include('body.header')
 
-    @include('body.hero')
-
+    @if (Route::is('homeIndex'))
+        @include('body.hero')
+    @endif
     <!-- ======= Main Contents ======= -->
 
     <main id="main">

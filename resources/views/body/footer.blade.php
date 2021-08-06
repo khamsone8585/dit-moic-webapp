@@ -16,11 +16,11 @@
                 <div class="col-lg-4 col-md-6 footer-links">
                     <h4>ກົມການຄ້າພາຍໃນ</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="index.html">ໜ້າທໍາອິດ</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="history.html">ປະຫວັດຄວາມເປັນມາ</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="news.html">ຂ່າວປະຊາສຳພັນ</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="statistic.html">ຂໍ້ມູນສະຖິຕິ/ບົດຄົ້ນຄວ້າ</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="legislation.html">ກົດໝາຍ ແລະ ດຳລັດ</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('homeIndex')}}">ໜ້າທໍາອິດ</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('pagesHistory')}}">ປະຫວັດຄວາມເປັນມາ</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('pagesNews')}}">ຂ່າວປະຊາສຳພັນ</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('pagesStatistic')}}">ຂໍ້ມູນສະຖິຕິ/ບົດຄົ້ນຄວ້າ</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{route('pagesLegislation')}}">ກົດໝາຍ ແລະ ດຳລັດ</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6 footer-links">
@@ -42,10 +42,7 @@
             <script>
                 document.write(new Date().getFullYear())
             </script>
-            <strong><span>ກົມການຄ້າພາຍໃນ ກະຊວງອຸດສາຫະກໍາ ແລະ ການຄ້າ</span></strong>. All Rights Reserved.
-        </div>
-        <div class="credits">
-            <span style="font-size: smaller;">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></span>
+            <strong><span>ກົມການຄ້າພາຍໃນ ກະຊວງອຸດສາຫະກໍາ ແລະ ການຄ້າ</span></strong>. All Rights Reserved
         </div>
     </div>
 </footer>
