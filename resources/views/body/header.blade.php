@@ -37,7 +37,7 @@
                 </li>
                 <li class="drop-down"><a href="{{route('pagesContact')}}">ຕິດຕໍ່ພວກເຮົາ</a>
                     <ul>
-                        <li><a href="{{route('pagesLegislation')}}">ເຂົ້າສູ່ລະບົບ</a></li>
+                        <li><a href="{{route('login')}}">ເຂົ້າສູ່ລະບົບ</a></li>
                     </ul>
                 </li>
             </ul>

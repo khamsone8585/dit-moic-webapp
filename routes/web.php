@@ -15,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class,'Home'])->name('homeIndex');
+Route::get('/admin',function(){
+    return view('admin.login');
+})->name('login');
 Route::get('/activity',[HomeController::class,'Activity'])->name('pagesActivity');
 Route::get('/contact',[HomeController::class,'Contact'])->name('pagesContact');
 Route::get('/history',[HomeController::class,'History'])->name('pagesHistory');
