@@ -55,6 +55,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
+<<<<<<< HEAD
+=======
+        "platform-check": false,
+>>>>>>> 1c4d178 (add new git)
         "sort-packages": true
     },
     "minimum-stability": "dev",

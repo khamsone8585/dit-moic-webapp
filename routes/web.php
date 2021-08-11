@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\HistoryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Requests\HistoryPost;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,4 +33,14 @@ Route::get('/Statistic',[HomeController::class,'Statistic'])->name('pagesStatist
 Route::get('/Legislation',[HomeController::class,'Legislation'])->name('pagesLegislation');
 Route::get('/Order',[HomeController::class,'Order'])->name('pagesOrder');
 Route::get('/Notice',[HomeController::class,'Notice'])->name('pagesNotice');
+
+//admin
+Route::get('/admin/history',function(){
+    return view('admin.about.index');
+})->name('History.page');
+Route::get('/admin/stracture',function(){
+    return view('admin.stracture.index');
+})->name('Stracture.page');
+
+Route::resource('history', HistoryController::class);
 
