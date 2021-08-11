@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class,'Home'])->name('homeIndex');
 Route::get('/admin',function(){
-    return view('admin.login');
+    return view('admin.index');
 })->name('login');
 Route::get('/activity',[HomeController::class,'Activity'])->name('pagesActivity');
 Route::get('/contact',[HomeController::class,'Contact'])->name('pagesContact');
@@ -35,12 +35,8 @@ Route::get('/Order',[HomeController::class,'Order'])->name('pagesOrder');
 Route::get('/Notice',[HomeController::class,'Notice'])->name('pagesNotice');
 
 //admin
-Route::get('/admin/history',function(){
-    return view('admin.about.index');
-})->name('History.page');
 Route::get('/admin/stracture',function(){
     return view('admin.stracture.index');
 })->name('Stracture.page');
 
-Route::resource('history', HistoryController::class);
 

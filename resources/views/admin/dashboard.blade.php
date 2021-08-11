@@ -62,11 +62,6 @@
         @include('admin.body.sidebar')
 
         <div class="content-wrapper">
-            @if(session('status')
-                <div style="background: red;color:white">
-                    {{session('status')}}
-                </div>
-            @endif
             <!-- Main content starts -->
                 @yield('content')
             <!-- Main content ends -->

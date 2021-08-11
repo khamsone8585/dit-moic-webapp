@@ -16,7 +16,9 @@ class HistoryController extends Controller
      */
     public function index()
     {
-        return view('admin.about.index');
+        $data = History::latest()->paginate(5);
+        return view('admin.history.index',compact('data'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**
@@ -26,7 +28,7 @@ class HistoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.history.index');
     }
 
     /**
@@ -37,22 +39,24 @@ class HistoryController extends Controller
      */
     public function store(HistoryPost $request)
     {
-        $validated = $request->validated();
-        $post = History::create($validated);
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required',
+        ]);
 
-        $request->session()->flash('status','ສ້າງຂໍ້ມູນປະຫວັດຄວາມເປັນມາສຳເລັດ !!');
+        Post::create($request->all());
 
-        return redirect()->route('admin.about.index',compact('post'));
-
+        return redirect()->route('posts.index')
+                        ->with('success','Post created successfully.');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(History $history)
     {
         //
     }
@@ -60,10 +64,10 @@ class HistoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(History $history)
     {
         //
     }
@@ -72,10 +76,10 @@ class HistoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, History $history)
     {
         //
     }
@@ -83,10 +87,10 @@ class HistoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\History  $history
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(History $history)
     {
         //
     }
